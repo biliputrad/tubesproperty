@@ -27,13 +27,13 @@ include('koneksi.php');
       $email =  $data['email'];
     }
   ?>
-  <div class="container">
-  <div class="row">
-    <div class="col">
-    </div>
-    <div class="col">
-	<a href="admin/function/logout.php" class="btn btn-danger float-right">Logout</a>
-  		<div id="myModal2" class="modal fade" role="dialog" style="color:black;">
+  <nav class="navbar navbar-dark bg-dark">      
+      <a class="navbar-brand" href="#">Property123</a>
+      <div class="form-inline">
+        <a href="" class="btn btn-primary" style="margin-right: 5px;" data-toggle = "modal" data-target ="#myModal2">Akun</a>
+      <a href="admin/function/logout.php" class="btn btn-danger">Logout</a>
+      </div>
+        <div id="myModal2" class="modal fade" role="dialog" style="color:black;">
           <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -60,11 +60,8 @@ include('koneksi.php');
               </div>
             </div>
           </div>
-        </div>
-	
-  <a href="" class="btn btn-primary float-right" data-toggle = "modal" data-target ="#myModal2"> <span class="glyphicon glyphicon-user">Akun</span></a>
-  </div>
-  </div>
+  
+  </nav>
 </head>
 <body>
 
