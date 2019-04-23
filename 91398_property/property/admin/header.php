@@ -106,7 +106,7 @@ include('../koneksi.php');
      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a href="" class="btnS btn btn-info" data-toggle = "modal" data-target ="#myModal2">Akun<span class="sr-only">(current)</span></a>
+                <a href="" class="btnS btn btn-primary" style="margin-right: 5px;" data-toggle = "modal" data-target ="#myModal2">Akun<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a href="function/logout.php" class="btnS btn btn-danger">Logout<span class="sr-only">(current)</span></a>
