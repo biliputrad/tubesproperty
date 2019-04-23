@@ -1,0 +1,9 @@
+INSERT INTO data_gudang (data_gudang.id_bahan, data_gudang.jumlah) SELECT d.id_bahan ,d.jumlah FROM detil_belibb d WHERE d.id_transaksi='AXK771'
+ON DUPLICATE KEY UPDATE data_gudang.jumlah=data_gudang.jumlah+d.jumlah
+
+INSERT INTO data_gudang (data_gudang.id_bahan, data_gudang.jumlah) SELECT d.id_bahan ,d.jumlah FROM detil_belibb d join beli_bahanbaku b on (d.id_transaksi=b.id_transaksi) WHERE b.id_gudang='001'
+ON DUPLICATE KEY UPDATE data_gudang.jumlah=data_gudang.jumlah+d.jumlah
+
+
+INSERT INTO data_gudang (data_gudang.id_gudang,data_gudang.id_bahan, data_gudang.jumlah) SELECT d.id_gudang,d.id_bahan ,d.jumlah FROM detil_belibb d WHERE d.id_gudang='$id_gudang'
+ON DUPLICATE KEY UPDATE data_gudang.jumlah=data_gudang.jumlah+d.jumlah

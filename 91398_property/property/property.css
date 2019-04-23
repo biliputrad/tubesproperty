@@ -1,0 +1,125 @@
+
+/* home_user.html , home_admin.html */
+
+body{
+	background-image: url("img/back.jpg");
+    background-attachment: fixed;
+	background-position: center; 
+}
+
+#title{
+	color: white;
+	text-align: center;
+	margin: 70px;
+	font-size: 50px;
+	text-shadow: 4px 3px black;
+}
+
+#logout {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#back {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+/*
+#bni{
+	width: 10%;
+	position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+#bri{
+	width: 10%;
+	position: absolute;
+    bottom: 8px;
+    right: 160px;
+}
+
+#mandiri{
+	width: 10%;
+	position: absolute;
+    bottom: 8px;
+    right: 310px;
+}
+*/
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+
+/* catalog_property.html */
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    background-color: hsl(0, 0%, 24%, 0.3); 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/* pesan_bahanbaku.html */
+
+.isiform{
+	color: white;
+	font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/* login.php */
+
+.warna{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center; 
+    font-size: 32px;
+}
+
+.ukuranform{
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+
+.form{
+    text-align: center; 
+    background-color: #c2c3c4;
+    border-top-color: black;
+
+}
+
+.form-group{
+    padding: 10px;
+}
+
+/*-------------------------------------------------------------------------------------*/
